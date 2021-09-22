@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<style>
+    html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+</style>
+
+<body id="body">
+    <div class="shad">
+        <div class="container">
+            <center>
+                <img src="logo.png" id="yes" width="300px">
+            </center>
+        </div>
+        <div class="section conatiner">
+            <center>
+                <form method="get" action="https://search.albony.xyz/search">
+                    <input type="text" style="width: 50%;border: none;background-color: rgba(255, 255, 240, 0.7);"
+                        name="q" size="31" value="" class="input is-rounded" id="serch" autocomplete="off"
+                        placeholder="Search for sussy stuff , I know what you are searching ( ͡° ͜ʖ ͡°)">
+                </form>
+            </center>
+        </div>
+        <center id="huh">
+            <div class="container">
+                <div class="title is-4 is-uppercase" id="text1">quotes of the day</div>
+            </div>
+            <div class="section container">
+                <div class="subtitle is-6" id="text"></div>
+            </div>
+        </center>
+    </div>
+</body>
+<script>
+    var currentTime = new Date().getHours();
+    if (document.body) {
+        if (7 <= currentTime && currentTime < 20) {
+            document.getElementById("body").style.backgroundImage = "url(1.jpg)";
+            document.getElementById("text1").innerHTML = "Have a great day!"
+        }
+        else {
+            document.getElementById("body").style.backgroundImage = "url(2.jpg)";
+            document.getElementById("text1").innerHTML = "Have a great night!"
+        }
+    }
+    var textArray = [
+        'Albony sucks',
+        'when flying cow stop flying',
+        'ved stop gaying',
+        'when rey get wife',
+        'stupid moon why u exist',
+        'Luke when gib moon mod',
+        'santosh when switch to linux ;-;',
+        '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">wat</a>',
+        'tektim4 when come online ;-;',
+        'Pale, UMM ,  idk he fox addict and cool',
+        'amir nudes where',
+        'idk what else to add pls send help',
+        '<a href="https://steamcommunity.com/id/unsnaptic/games/?tab=all" target="_blank">update complete. click here to reload the page</a>',
+        '<a href="https://reddit.com/r/anime" target="_blank">:troll:</a>',
+        'Remember Temple OS',
+        'bimbows',
+        'nub',
+        ';-;',
+
+    ];
+    var randomNumber = Math.floor(Math.random() * textArray.length);
+
+    document.getElementById("text").innerHTML = ('src', textArray[randomNumber]);
+</script>
+
+</html>
